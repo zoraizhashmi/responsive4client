@@ -1,0 +1,182 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: block;
+	background-color:white;
+	background-image: url("images/background.jpg");
+	cursor: url('images/plane.png'), auto;
+}
+
+.header{
+	font-size: 6vw;
+}
+
+.underheader{
+	font-size: 2vw;
+}
+
+.title {
+	width: 100%;
+	height: 25%;
+	display: block;
+	font-family: fjalla;
+	color: white;
+	text-align: center;
+	vertical-align: center;
+}
+
+@font-face {
+  font-family: fjalla;
+  src: url(fonts/fjallaone.ttf);
+}
+
+.bodyrow {
+	width: 100%;
+	height: calc(75%/2);
+	display: flex;
+}
+
+.city {
+	width: calc(100%/3);
+	height: 100%;
+	display: flex;	
+}
+
+.box {
+	width: 50%;
+	height: 100%;
+}
+
+.whiten {
+  position: relative;
+  display: inline-block;
+}
+
+.whiten .whitentext {
+  visibility: hidden;
+  width: 120px;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+   font-size: 62.5%;
+
+  /* Position the tooltip */
+  position: absolute;
+  /*z-index: 1;*/
+}
+.whitentext>#wrapper {
+  font-size:1em;
+}
+
+.whiten:hover .whitentext {
+  visibility: visible;
+}
+
+.testwhite {background-color: rgba(255, 255, 255, 0.9);}
+.blue {background-color: #0D11A8;}
+.red {background-color: #910101;}
+.yellow {background-color: #FAE317;}
+
+.london {content: url("images/london.jpg");}
+
+/* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+/* If you're using 'display: flex' this class can be used to easily center horizontally! */
+.center-horizontal {
+	align-items: center;	
+}
+
+/* If you're using 'display: flex' this class can be used to easily center vertically! */
+.center-vertical {
+	justify-content: center;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+/* Keep your image from overflowing it's parent DIV */
+.contain-image {
+	max-height: 95%;
+	max-width: 95%;
+}
+
+.square {
+  position: relative;
+  width: 50%;
+  display: flex
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.zoom {
+	transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+img {
+
+}
+
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+
+@media only screen and (max-width: 800px) {
+	
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: block;
+}
+
+.title {
+	width: 100%;
+	height: 25%;
+	display: block;
+	font-family: fjalla;
+	color: white;
+	text-align: center;
+	vertical-align: center;
+}
+
+@font-face {
+  src: url(fonts/fjallaone.ttf);
+  font-family: fjalla;
+}
+
+.bodyrow {
+	width: 100%;
+	height: calc(75%/3);
+	display: block;
+}
+
+.city {
+	width: 100%;
+	height: calc((100%/3));
+	display: flex;	
+}
+
+.box {
+	width: 50%;
+	height: 100%;
+}
+
+}
