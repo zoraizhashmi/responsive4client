@@ -118,7 +118,7 @@ body {
 
 .square:after {
   content: "";
-  display: block;
+  display: flex;
   padding-bottom: 100%;
 }
 
@@ -185,11 +185,13 @@ body {
 }
 
 .box {
-	width: 50%;
+	width: 100%;
 	height: 100%;
 }
 
 .square {
+  max-height: 95%;
+  max-width: 95%;
   position: relative;
   width: 50%;
   display: flex
