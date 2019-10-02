@@ -56,29 +56,17 @@ body {
 	height: 100%;
 }
 
-.whiten {
-  position: relative;
-  display: inline-block;
-}
 
-.whiten .whitentext {
-  visibility: hidden;
+.imgtxt {
   font-family: cantarell;
-  width: 120px;
-  color: black;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-   font-size: 0.3vh;
+  font-size: 1.5vh;
+  opacity: 1;
 
-  /* Position the tooltip */
-  position: absolute;
-  /*z-index: 1;*/
 }
 
-
-.whiten:hover .whitentext {
+.imgtxt:hover {
   visibility: visible;
+  
 }
 
 .testwhite {background-color: rgba(255, 255, 255, 0.9);}
@@ -220,6 +208,37 @@ img:hover {
 	  border-style: solid;
 	  border-width: medium;
 	  border-color: white;
+	}
+	
+	.imgtxt {
+      font-size: 2.5vh;
 }
 
+	.imgtxt:hover {
+	  visibility: visible;	  
+	}
+
+
+}
+
+/*.whiten {
+  position: relative;
+  display: inline-block;
+}
+
+.whiten .whitentext {
+  visibility: hidden;
+  font-family: cantarell;
+  width: 120px;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 0.3vh;
+  position: absolute;
+}
+
+
+.whiten:hover .whitentext {
+  visibility: visible;
 }
