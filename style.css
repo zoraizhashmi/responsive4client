@@ -180,7 +180,7 @@ img:hover {
 
 	.bodyrow {
 		width: 100%;
-		height: calc(75%/2);
+		height: 100%;
 		display: block;
 	}
 
