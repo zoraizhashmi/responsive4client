@@ -124,8 +124,8 @@ body {
 
 .content {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .zoom {
@@ -137,7 +137,9 @@ body {
 }
 
 img {
-
+	  border-style: solid;
+	  border-width: 5px;
+	  border-color: white;
 }
 
 img:hover {
@@ -147,68 +149,77 @@ img:hover {
 
 @media only screen and (max-width: 800px) {
 	
-body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	display: block;
-}
+	body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		display: block;
+	}
 
-.title {
-	width: 100%;
-	height: 25%;
-	display: flex;
-	text-align: center;
-	vertical-align: center;
-}
-.txt{
-	display: block;
-	font-family: fjalla;
-	color: white;
-}
+	.header{
+		font-size: 8vw;
+	}
 
-@font-face {
-  src: url(fonts/fjallaone.ttf);
-  font-family: fjalla;
-}
+	.underheader{
+		font-size: 3vw;
+	}
 
-.bodyrow {
-	width: 100%;
-	height: calc(75%/2);
-	display: block;
-}
+	.title {
+		width: 100%;
+		height: 25%;
+		display: flex;
+		text-align: center;
+		vertical-align: center;
+	}
+	.txt{
+		display: block;
+		font-family: fjalla;
+		color: white;
+	}
 
-.city {
-	width: 100%;
-	height: calc((100%/3));
-	display: flex;	
-}
 
-.box {
-	width: 100%;
-	height: 100%;
-}
+	.bodyrow {
+		width: 100%;
+		height: calc(75%/2);
+		display: block;
+	}
 
-.square {
-  max-height: 95%;
-  max-width: 95%;
-  position: relative;
-  width: 50%;
-  display: flex
-}
+	.city {
+		width: 100%;
+		height: calc((100%/3));
+		display: flex;	
+	}
 
-.square:after {
-  content: "";
-  display: flex;
-  padding-bottom: 100%;
-  max-height: 95%;
-  max-width: 95%;
-}
+	.box {
+		width: 100%;
+		height: 100%;
+	}
 
-.content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+	.square {
+	  max-height: 95%;
+	  max-width: 95%;	
+	  width: 50%;
+	  display: flex
+	}
+
+	.square:after {
+	  content: "";
+	  display: flex;
+	  padding-bottom: 100%;
+	  max-height: 95%;
+	  max-width: 95%;
+	}
+
+	.content {
+	  position: absolute;
+	  max-width: 95%;
+	  max-height: 95%;
+	}
+	
+	img {
+	  border-style: solid;
+	  border-width: medium;
+	  border-color: white;
 }
 
 }
