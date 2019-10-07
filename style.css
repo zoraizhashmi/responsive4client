@@ -3,19 +3,23 @@ body {
 	height: 100%;
 	margin: 0;
 	display: block;
-	background-color:white;
+	/* This is the pattern you see in the background */
 	background-image: url("images/background.jpg");
+	/* This is the plane cursor that you see */
 	cursor: url('images/plane.png'), auto;
 }
 
+/* This determines the font size (relative to viewport/window size) for the main title */
 .header{
 	font-size: 6vw;
 }
 
+/* This determines the font size (relative to viewport/window size) for the subheader */
 .underheader{
 	font-size: 1.5vw;
 }
 
+/* This creates the title that you see on the top */
 .title {
 	width: 100%;
 	height: 25%;
@@ -23,40 +27,41 @@ body {
 	text-align: center;
 	vertical-align: center;
 }
-.txt{
+
+/* This creates a small div inside the title div to make it took organized */
+.titletxt{
 	display: block;
 	font-family: fjalla;
 	color: white;
 }
 
+/* This link the font face for the image caption in the page */
 @font-face {
   font-family: cantarell;
   src: url(fonts/cantarell.ttf);
 }
 
+/* This links the font for the title to the page */
 @font-face {
   font-family: fjalla;
   src: url(fonts/fjallaone.ttf);
 }
 
+/* This creates the rows, and make it big enough to make the website scrolling */
 .bodyrow {
 	width: 100%;
 	height: calc(75%/2);
 	display: flex;
 }
 
+/* This creates the small rows that lay out the space for the images */
 .city {
 	width: calc(100%/3);
 	height: 100%;
 	display: flex;	
 }
 
-.box {
-	width: 50%;
-	height: 100%;
-}
-
-
+/* This determines the font size (relative to viewport/window size) for the main title */
 .imgtxt {
   font-family: cantarell;
   font-size: 3vh;
@@ -64,17 +69,16 @@ body {
 
 }
 
+/* This makes the image aption visible when you hover over it */
 .imgtxt:hover {
   visibility: visible;
   
 }
 
+/* Colors used */
 .testwhite {background-color: rgba(255, 255, 255, 0.9);}
-.blue {background-color: #0D11A8;}
 .red {background-color: #910101;}
-.yellow {background-color: #FAE317;}
 
-.london {content: url("images/london.jpg");}
 
 /* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
 /* If you're using 'display: flex' this class can be used to easily center horizontally! */
@@ -87,10 +91,7 @@ body {
 	justify-content: center;
 }
 
-.center {
-	justify-content: center;
-	align-items: center;
-}
+
 
 /* Keep your image from overflowing it's parent DIV */
 .contain-image {
@@ -98,6 +99,7 @@ body {
 	max-width: 95%;
 }
 
+/* Smaller div created to  establish features that only effect the image and not the city div */
 .square {
   position: relative;
   width: 50%;
@@ -110,17 +112,19 @@ body {
   padding-bottom: 100%;
 }
 
+/* Contains image in square div */
 .content {
   position: absolute;
   max-width: 100%;
   max-height: 100%;
 }
 
+/* Changes color of div upon hover */
 .content:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-
+/* Makes image pop up when hovered over */
 .zoom {
 	transition: transform .2s; /* Animation */
 }
@@ -129,17 +133,21 @@ body {
   transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+
+/* Creates border around image */
 img {
 	  border-style: solid;
 	  border-width: 5px;
 	  border-color: white;
 }
 
+/* Makes image opaque when hovered over */
 img:hover {
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
   }
 
+/* Changes css layout for mobile phones */
 @media only screen and (max-width: 800px) {
 	
 	body {
@@ -148,46 +156,32 @@ img:hover {
 		margin: 0;
 		display: block;
 	}
-
+	
+	/* This determines the font size (relative to viewport/window size) for the main title */
 	.header{
 		font-size: 8vw;
 	}
-
+	
+	/* This determines the font size (relative to viewport/window size) for the subheader */
 	.underheader{
 		font-size: 3vw;
 	}
 
-	.title {
-		width: 100%;
-		height: 25%;
-		display: flex;
-		text-align: center;
-		vertical-align: center;
-	}
-	.txt{
-		display: block;
-		font-family: fjalla;
-		color: white;
-	}
-
-
+	/* This creates the rows, and make it big enough to make the website scrolling */
 	.bodyrow {
 		width: 100%;
 		height: 100%;
 		display: block;
 	}
-
+	
+	/* This creates the small rows that lay out the space for the images */
 	.city {
 		width: 100%;
 		height: calc((100%/3));
 		display: flex;	
 	}
 
-	.box {
-		width: 100%;
-		height: 100%;
-	}
-
+	/* Smaller div created to  establish features that only effect the image and not the city div */
 	.square {
 	  max-height: 95%;
 	  max-width: 95%;	
@@ -202,26 +196,25 @@ img:hover {
 	  max-height: 95%;
 	  max-width: 95%;
 	}
-
+	
+	/* Contains image in square div */
 	.content {
 	  position: absolute;
 	  max-width: 95%;
 	  max-height: 95%;
 	}
-	
+
+	/* Creates border around image */
 	img {
 	  border-style: solid;
 	  border-width: medium;
 	  border-color: white;
 	}
 	
+	/* Makes image opaque when hovered over */
 	.imgtxt {
       font-size: 2.5vh;
 }
-
-	.imgtxt:hover {
-	  visibility: visible;	  
-	}
 
 
 }
